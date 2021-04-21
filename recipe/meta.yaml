@@ -31,7 +31,6 @@ requirements:
     - earthengine-api
     - scikit-learn
     - python-box
-    - ee
     - geemap
 
 test:
