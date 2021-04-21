@@ -1,5 +1,5 @@
 {% set name = "hagerstrand" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.6" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: cb23474aa6cdc91d3097d0319bbe654c747db0342f07a1d8cc27f30ec2780888
+  sha256: dfd621881b6c64cd7f010df594162e9c2cfed8ccf239d6e491138a7ccf810110
 
 build:
   number: 0
@@ -23,10 +23,6 @@ requirements:
     - ipyleaflet
     - pandas
     - pyshp
-    - geopandas
-    - earthengine-api
-    - scikit-learn
-    - shapely
     - python >=3.6
 
 test:
