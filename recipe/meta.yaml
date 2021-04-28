@@ -1,5 +1,5 @@
 {% set name = "hagerstrand" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: c1bb97096e1d6f2feec5d096a2ae6bf3a5b693c183bfe772ec41ba62d92b8ef4
+  sha256: a41a63039893551435ff822f4d63d8f8dfe0b92b01623275bc226238e12e4c15
 
 build:
   number: 0
