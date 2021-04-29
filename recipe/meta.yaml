@@ -32,6 +32,8 @@ requirements:
     - scikit-learn
     - python-box
     - geemap
+    - ipython
+    - numpy
 
 test:
   imports:
