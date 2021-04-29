@@ -2,8 +2,8 @@
 {% set version = "0.0.9" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,6 +32,8 @@ requirements:
     - scikit-learn
     - python-box
     - geemap
+    - ipython
+    - numpy
 
 test:
   imports:
